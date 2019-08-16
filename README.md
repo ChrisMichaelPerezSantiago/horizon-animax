@@ -18,8 +18,13 @@ I must mention that since the information comes from a Latin website, I must mak
 
 Apologies!
 
-## Author
+## ⚡️References
+- [Vue Function API](https://github.com/vuejs/vue-function-api) *Using vue-function-api to implement useful vue hooks.*
+- [Vue hooks](https://github.com/u3u/vue-hooks) *Awesome Vue Hooks*
 
+
+
+## Author
 👤 **Chris Michael**
 
 * Twitter: [@Chris5855M](https://twitter.com/Chris5855M)
