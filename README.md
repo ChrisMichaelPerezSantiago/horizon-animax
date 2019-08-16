@@ -2,8 +2,6 @@
 
 <h1 align="center">Welcome to Horizon Animax 👋</h1>
 
-
-# Horizon-Animax
 *In this new platform of Japanese anime series, lovers of this genre can enjoy all the content by streaming in with Spanish subtitles. Horizon Animax has a free version with diverse content at zero cost where you can find an extensive series catalog.*
 
 ### 👷🚧In construction 
@@ -15,7 +13,7 @@
 - [ ] Deployment -  *in process!*
 - [ ] Review - *in process!*
 
-##📣Read this please!📣
+## 📣Read this please!📣
 I must mention that since the information comes from a Latin website, I must make it clear that the videos are with sub Spanish and voices in Japanese. I am very sorry that this application may not be useful for the English speaker, so the application does not achieve a higher popularity among users.
 
 Apologies!
