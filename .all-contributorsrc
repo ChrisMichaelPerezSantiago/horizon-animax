@@ -1,0 +1,30 @@
+{
+  "projectName": "horizon-animax",
+  "projectOwner": "ChrisMichaelPerezSantiago",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 70,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "ChrisMichaelPerezSantiago",
+      "name": "Chris Michael",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/21962584?v=4",
+      "profile": "https://personal-porfolio.chrismichael.now.sh/",
+      "contributions": [
+        "question",
+        "code",
+        "design",
+        "doc",
+        "ideas",
+        "maintenance",
+        "test"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}

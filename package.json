@@ -5,11 +5,16 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "dependencies": {
+    "@u3u/vue-hooks": "^1.4.0",
+    "all-contributors-cli": "^6.8.1",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
+    "vue-function-api": "^2.2.0",
     "vue-router": "^3.0.3",
     "vuex": "^3.0.1"
   },
