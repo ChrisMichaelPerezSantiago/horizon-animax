@@ -1,4 +1,4 @@
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 <h1 align="center">Welcome to Horizon Animax 👋</h1>
 
@@ -53,6 +53,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://personal-porfolio.chrismichael.now.sh/"><img src="https://avatars0.githubusercontent.com/u/21962584?v=4" width="70px;" alt="Chris Michael"/><br /><sub><b>Chris Michael</b></sub></a><br /><a href="#question-ChrisMichaelPerezSantiago" title="Answering Questions">💬</a> <a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax/commits?author=ChrisMichaelPerezSantiago" title="Code">💻</a> <a href="#design-ChrisMichaelPerezSantiago" title="Design">🎨</a> <a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax/commits?author=ChrisMichaelPerezSantiago" title="Documentation">📖</a> <a href="#ideas-ChrisMichaelPerezSantiago" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-ChrisMichaelPerezSantiago" title="Maintenance">🚧</a> <a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax/commits?author=ChrisMichaelPerezSantiago" title="Tests">⚠️</a></td>
+    <td align="center"><a href="http://www.kinoshita.eti.br"><img src="https://avatars1.githubusercontent.com/u/304786?v=4" width="70px;" alt="Bruno P. Kinoshita"/><br /><sub><b>Bruno P. Kinoshita</b></sub></a><br /><a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax/commits?author=kinow" title="Code">💻</a> <a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax/issues?q=author%3Akinow" title="Bug reports">🐛</a> <a href="#ideas-kinow" title="Ideas, Planning, & Feedback">🤔</a> <a href="#maintenance-kinow" title="Maintenance">🚧</a></td>
   </tr>
 </table>
 

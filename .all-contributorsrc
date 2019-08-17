@@ -24,6 +24,18 @@
         "maintenance",
         "test"
       ]
+    },
+    {
+      "login": "kinow",
+      "name": "Bruno P. Kinoshita",
+      "avatar_url": "https://avatars1.githubusercontent.com/u/304786?v=4",
+      "profile": "http://www.kinoshita.eti.br",
+      "contributions": [
+        "code",
+        "bug",
+        "ideas",
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7
