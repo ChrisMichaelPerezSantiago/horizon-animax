@@ -11,21 +11,18 @@
 
 <script>
   import {onCreated} from 'vue-function-api';
-  import {useState , useActions} from '@u3u/vue-hooks'
+  import {useState , useStore} from '@u3u/vue-hooks'
 
   export default {
     name: "home",
     setup(){
+      const store = useStore();
       const state = {
         ...useState(['latestAnimes' , 'isLoading'])
       };
-      const actions = {
-        ...useActions(['GET_LATEST_ANIME']),
-      }
       onCreated(() =>{
-        actions.GET_LATEST_ANIME();
+        store.value.dispatch('GET_LATEST_ANIME')
       });
-
       return{
         ...state
       }
