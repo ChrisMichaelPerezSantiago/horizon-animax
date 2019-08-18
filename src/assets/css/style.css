@@ -1,0 +1,141 @@
+/*****************
+ * General
+ *****************/
+body {
+  background: #292e30;
+  color: #ddd;
+}
+a:link,
+a:visited {
+  color: rgb(192, 216, 218);
+}
+a:hover {
+  color: #719aad;
+}
+
+
+/*****************
+ * NavBar
+ *****************/
+.bg-nav {
+  background: #232728;
+}
+.navbar-brand {
+  margin-right: 40px;
+}
+.nav-link {
+  font-size: .9em;
+  text-transform: lowercase;
+  letter-spacing: 1.5px;
+}
+
+
+/*****************
+ * Form controls
+ *****************/
+.form-control {
+  border: 0;
+}
+.search-bar {
+  background: #fff;
+  background: #393f42;
+  padding: 4px;
+  border-radius: 15px;
+}
+.search-bar .btn {
+  border-radius: 15px;
+}
+.search-bar input {
+  border-radius: 15px;
+  background: #393f42;
+  color: #eee;
+}
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: inherit;
+  color: #eee;
+}
+
+
+/*****************
+ * Buttons
+ *****************/
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
+.btn-main {
+  background-color: #2980b9;
+  color: #ddd;
+}
+.btn-main:hover {
+  background-color: #1f628e;
+}
+.btn-main:active {
+  background-color: #144463;
+}
+.btn-dark {
+  background: #222;
+  border-color: #111;
+  color: #eee !important;
+  text-transform: lowercase;
+  letter-spacing: 1.4px;
+  font-family: monospace;
+}
+.btn-dark:hover {
+  background: #eee;
+  color: #222 !important;
+}
+
+
+/*****************
+ * Main Content
+ *****************/
+.page-title {
+  text-align: center;
+  font-size: 1.6em;
+  margin-top: 1em;
+}
+.page-title hr {
+  border-color: #fff;
+  width: 70px;
+  margin-bottom: 2em;
+}
+.fa-star {
+  color: yellow;
+}
+.movie-list img {
+  border-radius: 10px;
+}
+.movie-list-title {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.movie-list .col-6 {
+  margin-bottom: 20px;
+}
+
+
+/************
+ * Footer
+ ************/
+footer {
+  background: #232728;
+  padding: 50px 0;
+  font-size: .9em;
+  margin-top: 200px;
+}
+
+
+footer img {
+  max-width: 350px;
+}
+
+.logo-alt {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
