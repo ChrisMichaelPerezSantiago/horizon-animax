@@ -729,20 +729,20 @@
 
 
 <script>
-import { value } from "vue-function-api";
+  import { value } from "vue-function-api";
 
-export default {
-  name: "NotFound",
-  setup() {
-    const title = value("Página No Encontrado");
-    const message = value("La página que busca no existe o ha cambiado");
-    const redirect = value("volver a la página de inicio>");
+  export default {
+    name: "NotFound",
+    setup() {
+      const title = value("Página No Encontrado");
+      const message = value("La página que busca no existe o ha cambiado");
+      const redirect = value("volver a la página de inicio>");
 
-    return {
-      title,
-      message,
-      redirect
-    };
-  }
-};
+      return {
+        title,
+        message,
+        redirect
+      };
+    }
+  };
 </script>
