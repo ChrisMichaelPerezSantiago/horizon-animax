@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <h2 class="tv-title-404-tm">{{title}}</h2>
         <p class="tv-text-404-tm">{{message}}</p>
-        <a href="#">{{redirect}}</a>
+        <router-link to="/">{{redirect}}</router-link>
       </div>
       <div class="col-md-6">
         <svg id="isometric" width="1302" height="952" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1302 952">
