@@ -108,7 +108,9 @@ a:hover {
   color: yellow;
 }
 .movie-list img {
-  border-radius: 10px;
+  height: 10em;
+  border-radius: 0.4em;
+  margin-bottom: 1.4em;
 }
 .movie-list-title {
   color: #fff;
@@ -127,15 +129,35 @@ footer {
   background: #232728;
   padding: 50px 0;
   font-size: .9em;
-  margin-top: 200px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
 }
-
-
 footer img {
   max-width: 350px;
 }
-
 .logo-alt {
   max-width: 150px;
   margin-bottom: 20px;
+}
+
+/************
+ * Not Found Section
+ ************/
+#notfound-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.side-box{ 
+  margin: 0 0 15px 0; 
+  padding: 10px; 
+  width: 400px; 
+  background:#232728; 
+  border-radius: 3px; 
+  float: right; 
 }

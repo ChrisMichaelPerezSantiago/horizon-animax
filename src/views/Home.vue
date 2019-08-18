@@ -1,21 +1,22 @@
 <template>
-<div class="container">
-  <div class="page-title">
-    Últimos Animes agregados
-    <br>
-  </div>
-  <div class="movie-list">
-    <div class="row">
-
-      <!--
-      <div class="col-6 col-sm-4 col-md-3">
-        <img src="" class="img-fluid" alt="">
-        <div class="movie-list-title"></div>
-        <div><i class="fas fa-star"></i></div>
-        <div></div>
+<div class="container-fluid">
+  <div class="row my-5">
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">
+      <div class="side-box">
+        <h6>Animes agregados</h6>
       </div>
-      -->
-
+      <div class="side-box">
+        <ul >
+          <i class="fas fa-play"></i><br>
+          <i class="fas fa-play"></i>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -23,10 +24,14 @@
 
 <script>
   import {onCreated} from 'vue-function-api';
-  import {useState , useStore} from '@u3u/vue-hooks'
+  import {useState , useStore} from '@u3u/vue-hooks';
+  import Anime from '../components/Anime';
 
   export default {
     name: "home",
+    components:{
+      Anime
+    },
     setup(){
       const store = useStore();
       const state = {
