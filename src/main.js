@@ -5,6 +5,8 @@ import store from "./store/store";
 import { plugin } from 'vue-function-api';
 import hooks from '@u3u/vue-hooks';
 
+require('./assets/css/style.css');
+
 Vue.config.productionTip = false;
 
 Vue.use(hooks);
