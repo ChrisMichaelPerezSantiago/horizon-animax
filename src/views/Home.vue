@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <LetterBox/>
+    <LetterBox/> <!-- LETTER BOX -->
+    <div>
+
+    </div>
   </div>
 </template>
 
