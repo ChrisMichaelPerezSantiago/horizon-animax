@@ -152,19 +152,21 @@ footer {
   background: #232728;
   padding: 50px 0;
   font-size: .9em;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  text-align: center;
 }
+
+footer .bottom {
+  margin-top: 40px;
+}
+
 footer img {
   max-width: 350px;
 }
+
 .logo-alt {
   max-width: 150px;
   margin-bottom: 20px;
 }
+
 
 /************
  * Not Found Section
