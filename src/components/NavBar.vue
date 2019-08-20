@@ -1,9 +1,11 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-nav" v-bind:class="{'navbarOpen': show }">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        
-      </a>
+
+      <router-link to="/" class="navbar-brand">
+        <img src="../assets/HA-logo.png" alt="Horizon Anime" id="logo">
+      </router-link>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" v-on:click.prevent="toggleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,19 +13,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{'show': show }">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-home"></i> Reciente</a>
-          </li>
-           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-ticket-alt"></i> películas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-ticket-alt"></i> Ovas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-sort-alpha-down"></i> por Alfabeto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-ellipsis-h"></i> por géneros</a>
+            <a class="nav-link" href="#"><i class="fas fa-compass"></i> Discover</a>
           </li>
         </ul>
         <div class="search-bar">
