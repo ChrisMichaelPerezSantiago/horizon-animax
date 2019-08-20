@@ -9,8 +9,13 @@
          
         </div>
       </div>
-      <div class="text-center bottom">
+      <div class="justify-content-center text-center bottom">
         <span>© {{year}} Horizon Animax , Todos los derechos reservados</span>
+        <p class="font-italic">Ningúno de los vídeo se encuentra alojado en servidores.</p>
+        <router-link to="" class="btn btn-dark">
+          <i class="fab fa-github"></i> 
+          View code on Github
+        </router-link>
       </div>
     </div>
   </footer>
