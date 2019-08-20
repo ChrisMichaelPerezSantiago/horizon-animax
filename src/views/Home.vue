@@ -9,7 +9,6 @@
   import {useState , useStore} from '@u3u/vue-hooks';
   import Anime from '../components/Anime';
   import LetterBox from '../components/LetterBox';
-
   export default {
     name: "home",
     components:{
