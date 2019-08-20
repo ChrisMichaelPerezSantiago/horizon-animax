@@ -13,7 +13,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent" v-bind:class="{'show': show }">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-compass"></i> Discover</a>
+            <a class="nav-link" href="#"><i class="fas fa-compass"></i> Descubre</a>
           </li>
         </ul>
         <div class="search-bar">
