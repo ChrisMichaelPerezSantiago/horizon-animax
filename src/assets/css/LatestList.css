@@ -1,0 +1,3273 @@
+.Main{
+  padding-top: 9em;
+}
+
+figure img {
+  display: block;
+  vertical-align: top;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  background-color: #f1f1f1;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+}
+
+iframe {
+  border: 0;
+}
+
+body {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+ul,
+ol,
+dl {
+  list-style-position: outside;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-left: 15px;
+}
+
+dl dt {
+  font-weight: 700;
+}
+
+nav ul,
+[class*="Menu"],
+[class*="List"] {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul ul {
+  list-style-type: inherit;
+  margin: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a,
+.Title a {
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.DFCn {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+}
+
+.Container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.AX[class*="Row"],
+.StCh[class*="Row"]>* {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.AX.Rows>*,
+.AX.Row.AFluid>.AFixed {
+  -webkit-flex: none;
+  -ms-flex: none;
+  flex: none;
+  max-width: 100%;
+}
+
+.AX.Row.AFluid>* {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.Column.A01,
+.Rows.A01>* {
+  width: 8.33333333%;
+}
+
+.Column.A02,
+.Rows.A02>* {
+  width: 16.66666667%;
+}
+
+.Column.A20,
+.Rows.A20>* {
+  width: 20%;
+}
+
+.Column.A03,
+.Rows.A03>* {
+  width: 25%;
+}
+
+.Column.A04,
+.Rows.A04>* {
+  width: 33.33333333%;
+}
+
+.Column.A05,
+.Rows.A05>* {
+  width: 41.66666667%;
+}
+
+.Column.A06,
+.Rows.A06>* {
+  width: 50%;
+}
+
+.Column.A07,
+.Rows.A07>* {
+  width: 58.33333333%;
+}
+
+.Column.A08,
+.Rows.A08>* {
+  width: 66.66666667%;
+}
+
+.Column.A09,
+.Rows.A09>* {
+  width: 75%;
+}
+
+.Column.A10,
+.Rows.A10>* {
+  width: 83.33333333%;
+}
+
+.Column.A11,
+.Rows.A11>* {
+  width: 91.66666667%;
+}
+
+.Column.A12,
+.Rows.A12>* {
+  width: 100%;
+}
+
+.StCh[class*="Row"]>*>* {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  display: block;
+  width: 100%;
+}
+
+@media all and (min-width: 767px) {
+  .Container {
+    max-width: 765px;
+  }
+
+  .BX[class*="Row"] {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+
+  .BX.Rows>*,
+  .BX.Row.BFluid>.BFixed {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    max-width: 100%;
+  }
+
+  .BX.Row.BFluid>* {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .Column.B01,
+  .Rows.B01>* {
+    width: 8.33333333%;
+  }
+
+  .Column.B02,
+  .Rows.B02>* {
+    width: 16.66666667%;
+  }
+
+  .Column.B20,
+  .Rows.B20>* {
+    width: 20%;
+  }
+
+  .Column.B03,
+  .Rows.B03>* {
+    width: 25%;
+  }
+
+  .Column.B04,
+  .Rows.B04>* {
+    width: 33.33333333%;
+  }
+
+  .Column.B05,
+  .Rows.B05>* {
+    width: 41.66666667%;
+  }
+
+  .Column.B06,
+  .Rows.B06>* {
+    width: 50%;
+  }
+
+  .Column.B07,
+  .Rows.B07>* {
+    width: 58.33333333%;
+  }
+
+  .Column.B08,
+  .Rows.B08>* {
+    width: 66.66666667%;
+  }
+
+  .Column.B09,
+  .Rows.B09>* {
+    width: 75%;
+  }
+
+  .Column.B10,
+  .Rows.B10>* {
+    width: 83.33333333%;
+  }
+
+  .Column.B11,
+  .Rows.B11>* {
+    width: 91.66666667%;
+  }
+
+  .Column.B12,
+  .Rows.B12>* {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .Container {
+    max-width: 990px;
+  }
+
+  .CX[class*="Row"] {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+
+  .CX.Rows>*,
+  .CX.Row.CFluid>.CFixed {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    max-width: 100%;
+  }
+
+  .CX.Row.CFluid>* {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .Column.C01,
+  .Rows.C01>* {
+    width: 8.33333333%;
+  }
+
+  .Column.C02,
+  .Rows.C02>* {
+    width: 16.66666667%;
+  }
+
+  .Column.C20,
+  .Rows.C20>* {
+    width: 20%;
+  }
+
+  .Column.C03,
+  .Rows.C03>* {
+    width: 25%;
+  }
+
+  .Column.C04,
+  .Rows.C04>* {
+    width: 33.33333333%;
+  }
+
+  .Column.C05,
+  .Rows.C05>* {
+    width: 41.66666667%;
+  }
+
+  .Column.C06,
+  .Rows.C06>* {
+    width: 50%;
+  }
+
+  .Column.C07,
+  .Rows.C07>* {
+    width: 58.33333333%;
+  }
+
+  .Column.C08,
+  .Rows.C08>* {
+    width: 66.66666667%;
+  }
+
+  .Column.C09,
+  .Rows.C09>* {
+    width: 75%;
+  }
+
+  .Column.C10,
+  .Rows.C10>* {
+    width: 83.33333333%;
+  }
+
+  .Column.C11,
+  .Rows.C11>* {
+    width: 91.66666667%;
+  }
+
+  .Column.C12,
+  .Rows.C12>* {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .Container {
+    max-width: 1170px;
+  }
+
+  .DX[class*="Row"] {
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+
+  .DX.Rows>*,
+  .DX.Row.DFluid>.DFixed {
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+    max-width: 100%;
+  }
+
+  .DX.Row.DFluid>* {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .Column.D01,
+  .Rows.D01>* {
+    width: 8.33333333%;
+  }
+
+  .Column.D02,
+  .Rows.D02>* {
+    width: 16.66666667%;
+  }
+
+  .Column.D20,
+  .Rows.D20>* {
+    width: 20%;
+  }
+
+  .Column.D03,
+  .Rows.D03>* {
+    width: 25%;
+  }
+
+  .Column.D04,
+  .Rows.D04>* {
+    width: 33.33333333%;
+  }
+
+  .Column.D05,
+  .Rows.D05>* {
+    width: 41.66666667%;
+  }
+
+  .Column.D06,
+  .Rows.D06>* {
+    width: 50%;
+  }
+
+  .Column.D07,
+  .Rows.D07>* {
+    width: 58.33333333%;
+  }
+
+  .Column.D08,
+  .Rows.D08>* {
+    width: 66.66666667%;
+  }
+
+  .Column.D09,
+  .Rows.D09>* {
+    width: 75%;
+  }
+
+  .Column.D10,
+  .Rows.D10>* {
+    width: 83.33333333%;
+  }
+
+  .Column.D11,
+  .Rows.D11>* {
+    width: 91.66666667%;
+  }
+
+  .Column.D12,
+  .Rows.D12>* {
+    width: 100%;
+  }
+}
+
+.AXCenter>* {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  vertical-align: middle !important;
+}
+
+.AXRight {
+  margin-right: 0;
+  margin-left: auto;
+}
+
+@media all and (min-width: 767px) {
+  .BXCenter>* {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle !important;
+  }
+
+  .BXRight {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .no-flexbox.no-flexboxtweener .BXRight {
+    float: right;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .CXCenter>* {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle !important;
+  }
+
+  .CXRight {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .no-flexbox.no-flexboxtweener .CXRight {
+    float: right;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .DXCenter>* {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    vertical-align: middle !important;
+  }
+
+  .DXRight {
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .no-flexbox.no-flexboxtweener .DXRight {
+    float: right;
+  }
+}
+
+.Rows,
+.Sp20[class*="Row"] {
+  margin: -20px -10px 20px;
+}
+
+.Rows>*,
+.Sp20[class*="Row"]>* {
+  padding: 20px 10px 0;
+}
+
+[class*="Row"]>* {
+  min-width: 0;
+}
+
+.Mb {
+  margin-bottom: 20px;
+}
+
+.Sp10[class*="Row"] {
+  margin: -10px -5px 10px;
+}
+
+.Sp10[class*="Row"]>* {
+  padding: 10px 5px 0;
+}
+
+.Sp15[class*="Row"] {
+  margin: -15px -7px 15px;
+}
+
+.Sp15[class*="Row"]>* {
+  padding: 15px 7px 0;
+}
+
+.Sp30[class*="Row"] {
+  margin: -30px -15px 30px;
+}
+
+.Sp30[class*="Row"]>* {
+  padding: 30px 15px 0;
+}
+
+.NMb {
+  margin-bottom: 0 !important;
+}
+
+.no-flexbox.no-flexboxtweener [class*="Row"]:before,
+.no-flexbox.no-flexboxtweener [class*="Row"]:after {
+  content: "";
+  display: table;
+}
+
+.no-flexbox.no-flexboxtweener [class*="Row"]:after {
+  clear: both;
+}
+
+.no-flexbox.no-flexboxtweener .AX.Row>* {
+  display: table-cell;
+  vertical-align: top;
+}
+
+.no-flexbox.no-flexboxtweener .AX.Row>.Column,
+.no-flexbox.no-flexboxtweener .AX.Rows>* {
+  float: left;
+}
+
+.no-flexbox.no-flexboxtweener .AX.Row {
+  display: table;
+  width: 100%;
+}
+
+.no-flexbox.no-flexboxtweener .AX.Row.AFluid>* {
+  float: none;
+}
+
+.no-flexbox.no-flexboxtweener .AX.Row.AFluid.Wa>* {
+  width: 100%;
+}
+
+@media all and (min-width: 767px) {
+  .no-flexbox.no-flexboxtweener .BX.Row>* {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .no-flexbox.no-flexboxtweener .BX.Row>.Column,
+  .no-flexbox.no-flexboxtweener .BX.Rows>* {
+    float: left;
+  }
+
+  .no-flexbox.no-flexboxtweener .BX.Row {
+    display: table;
+    width: 100%;
+  }
+
+  .no-flexbox.no-flexboxtweener .BX.Row.BFluid>* {
+    float: none;
+  }
+
+  .no-flexbox.no-flexboxtweener .BX.Row.BFluid.Wa>* {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .no-flexbox.no-flexboxtweener .CX.Row>* {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .no-flexbox.no-flexboxtweener .CX.Row>.Column,
+  .no-flexbox.no-flexboxtweener .CX.Rows>* {
+    float: left;
+  }
+
+  .no-flexbox.no-flexboxtweener .CX.Row {
+    display: table;
+    width: 100%;
+  }
+
+  .no-flexbox.no-flexboxtweener .CX.Row.CFluid>* {
+    float: none;
+  }
+
+  .no-flexbox.no-flexboxtweener .CX.Row.CFluid.Wa>* {
+    width: 100%;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .no-flexbox.no-flexboxtweener .DX.Row>* {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .no-flexbox.no-flexboxtweener .DX.Row>.Column,
+  .no-flexbox.no-flexboxtweener .DX.Rows>* {
+    float: left;
+  }
+
+  .no-flexbox.no-flexboxtweener .DX.Row {
+    display: table;
+    width: 100%;
+  }
+
+  .no-flexbox.no-flexboxtweener .DX.Row.CFluid>* {
+    float: none;
+  }
+
+  .no-flexbox.no-flexboxtweener .DX.Row.CFluid.Wa>* {
+    width: 100%;
+  }
+}
+
+
+input,
+textarea,
+select,
+.Select label {
+  display: block;
+  padding: 5px 15px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+input,
+select {
+  height: 40px;
+  line-height: normal;
+}
+
+
+input:disabled,
+textarea:disabled,
+select:disabled,
+.Select select:disabled+label,
+.Checkbox [type="checkbox"]:disabled+i:before,
+.Radio [type="radio"]:disabled+i {
+  background-color: #fafafa !important;
+  border-color: #ddd !important;
+  color: #999 !important;
+}
+
+.Radio [type="radio"]:disabled+i:before {
+  background-color: #999 !important;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+}
+
+::-moz-placeholder {
+  color: inherit;
+}
+
+:-ms-input-placeholder {
+  color: inherit;
+}
+
+input:-moz-placeholder {
+  color: inherit;
+}
+
+.ClFx:before,
+.ClFx:after {
+  content: "";
+  display: table;
+}
+
+.ClFx:after {
+  clear: both;
+}
+
+button,
+input,
+textarea,
+select,
+label,
+a {
+  transition: all 0.2s linear;
+}
+
+@media all and (max-width: 767px) {
+  .AXHd {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 767px) and (max-width: 1020px) {
+  .BXHd {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .BXHdm {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 1020px) and (max-width: 1200px) {
+  .CXHd {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .CXHdm {
+    display: none !important;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .DXHd {
+    display: none !important;
+  }
+}
+
+.SldrHmCn .bx-viewport {
+  overflow: inherit !important;
+}
+
+.Slide {
+  position: relative;
+  padding-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: inset 0 0 200px rgba(0, 0, 0, 0.2);
+  display: none;
+}
+
+.Slide[style] {
+  display: block;
+}
+
+.Slide:before {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 30px;
+  content: "";
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+}
+
+.Slide>div {
+  position: relative;
+  z-index: 2;
+}
+
+.Slide>.Bg,
+.Slide>.Bg span {
+  position: absolute;
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.Slide>.Bg {
+  z-index: 1;
+  opacity: 0.15;
+}
+
+.Slide .Image {
+  padding: 15px;
+  max-width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Slide .Image figure {
+  position: relative;
+  padding-top: 143.33333333333334%;
+  overflow: hidden;
+  display: block;
+}
+
+.Slide .Image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.Slide .Top {
+  padding-top: 15px;
+  margin: 0 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.Slide .Top .Title {
+  margin-bottom: 0;
+  line-height: 29px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 9px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.Slide .Bod {
+  height: 115px;
+  font-size: 12px;
+  padding: 15px;
+}
+
+.Slide .Bot {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.DwBd .SldrHmCn .bx-viewport {
+  z-index: 3;
+}
+
+.SldrHmCn .bx-viewport {
+  z-index: 1;
+}
+
+.SldrHmCn .bx-controls {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  line-height: 0;
+  height: 10px;
+  z-index: 2;
+}
+
+.SldrHmCn .bx-pager>div,
+.SldrHmCn .bx-pager>div>a {
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+}
+
+.SldrHmCn .bx-pager>div {
+  padding-left: 5px;
+}
+
+.SldrHmCn .bx-pager>div>a {
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.SldrHmCn .bx-pager>div>a.active {
+  background-color: #00bbf2;
+}
+
+.ListPostOpts {
+  padding: 5px 10px;
+}
+
+.ListPostOpts>li {
+  position: relative;
+  padding: 5px;
+}
+
+a.BtnOpt,
+.BtnOpt {
+  color: #fff;
+  padding: 5px 5px 5px 35px;
+  position: relative;
+  height: 30px;
+}
+
+.BtnOpt:before {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid #fff;
+  transition: all 0.2s;
+  padding-left: 1px;
+}
+
+.BtnOpt>span {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.BtnOpt.Play:hover:before {
+  background-color: rgba(0, 187, 242, 0.2);
+  color: #00bbf2;
+}
+
+.BtnOpt.Play:before {
+  color: #00bbf2;
+  border-color: #00bbf2;
+  line-height: 28px;
+  padding-left: 2px;
+  font-size: 14px;
+}
+
+.BtnOpt.Favo:hover:before {
+  background-color: rgba(255, 47, 72, 0.2);
+  color: #ff2f48;
+}
+
+.BtnOpt.Favo:before {
+  color: #ff2f48;
+  border-color: #ff2f48;
+  padding-left: 0;
+}
+
+.BtnOpt.Comt:hover:before {
+  background-color: rgba(0, 175, 67, 0.2);
+  color: #00af43;
+}
+
+.BtnOpt.Comt:before {
+  color: #00af43;
+  border-color: #00af43;
+}
+
+.BtnOpt.Comt span span.subspan {
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.BtnOpt.Comp:hover:before {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.BtnOpt.Comp:before {
+  border-color: rgba(255, 255, 255, 0.5);
+  padding-left: 0;
+  padding-right: 2px;
+}
+
+.DpdwCnt>.Close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  border-radius: 15px;
+  background-color: #ff2f48;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  padding: 0;
+}
+
+.DpdwCnt>.Close:hover {
+  opacity: 0.9;
+}
+
+.Share {
+  position: relative;
+}
+
+.Share .DpdwCnt.TtCn {
+  top: 45px;
+}
+
+.DpdwCnt.TtCn {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 270px;
+  border-radius: 5px;
+  overflow: inherit;
+}
+
+.DpdwCnt.TtCn:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #fff;
+}
+
+.DpdwCnt.TtCn>.Title {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.ListShare,
+.ListShare>li {
+  padding: 5px;
+  font-size: 0;
+  text-align: center;
+}
+
+.ListShare>li {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ListShare a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+li .Type {
+  opacity: 0.5;
+  transition: all 0.2s;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 16px;
+}
+
+li:hover>.Type {
+  opacity: 1;
+  color: #fff;
+}
+
+
+.Title.Page.fa-star:after {
+  width: 30px;
+  height: 20px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.15);
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+.Title .Order {
+  padding-top: 15px;
+  font-size: 0;
+}
+
+.Title .Order>a {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3b4248;
+  line-height: 30px;
+  min-width: 65px;
+  padding: 0 15px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+
+.Title .Order>a:hover,
+.Title .Order>a.Active {
+  background-color: #01bcf3;
+  position: relative;
+}
+
+.Title .Order>a.Active:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #01bcf3;
+}
+
+.Title .Order>a:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.Title .Order>a:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.ListEpisodios a {
+  position: relative;
+  display: block;
+  color: #fff;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+
+.ListEpisodios a:before {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 10px;
+  border: 2px solid #fff;
+  z-index: 3;
+  text-align: center;
+  font-size: 10px;
+  line-height: 16px;
+  padding-left: 1px;
+  margin-right: 0;
+  transition: right 0.4s;
+}
+
+.ListEpisodios a:hover:before {
+  right: -30px;
+}
+
+.ListEpisodios a:hover img {
+  opacity: 0.7;
+}
+
+.ListEpisodios .Image {
+  padding-top: 70%;
+  display: block;
+}
+
+.ListEpisodios .Image:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 30%;
+  background: -moz-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  background: -webkit-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  background: -ms-linear-gradient(top,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%);
+  z-index: 2;
+  border-radius: 0 0 5px 5px;
+  opacity: 0.8;
+}
+
+.ListEpisodios .Image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  z-index: 1;
+  transition: opacity 0.2s;
+  visibility: hidden;
+}
+
+.ListEpisodios .Capi {
+  line-height: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  z-index: 3;
+  color: rgb(255, 191, 0);
+  padding: 3px 5px;
+}
+
+.ListEpisodios .Title {
+  line-height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 3;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.Anime {
+  position: relative;
+}
+
+.ListAnimes .Anime {
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+  transition: all 0.3s;
+}
+
+.ListAnimes .Anime:hover {
+  box-shadow: 1px 1px 20px 2px rgba(0, 1, 1, 0.3);
+  animation: shadow 1s;
+}
+
+.Anime:before,
+.Noti:before {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.Anime>*,
+.Noti>* {
+  position: relative;
+  z-index: 2;
+}
+
+.Anime .Image {
+  position: relative;
+  padding-top: 143.33333333333334%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -webkit-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+}
+
+.Anime .Image>a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+.Anime .Image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+  visibility: hidden;
+}
+
+.Anime .Title {
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.Anime .Title a {
+  display: block;
+  overflow: hidden;
+  max-height: 30px;
+}
+
+.ListAnimRela .Anime {
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+  transition: all 0.3s;
+}
+
+.ListAnimRela .Anime:hover {
+  box-shadow: 1px 1px 20px 2px rgba(0, 1, 1, 0.3);
+  animation: shadow 1s;
+}
+
+.Anime .Title.related_title {
+  background: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 5px 5px 0 0;
+}
+
+.Anime:hover .Title.related_title {
+  background: #fff;
+}
+
+.Anime .Type {
+  left: 0;
+  bottom: 2px;
+  border-radius: 0;
+  opacity: 1;
+  right: auto;
+  margin: 0;
+  top: auto;
+  height: 20px;
+  line-height: 20px;
+}
+
+.Anime .Type:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 20px solid #000;
+  border-right: 10px solid transparent;
+  border-bottom-color: inherit;
+  position: absolute;
+  right: -10px;
+  top: 0;
+}
+
+.Anime .Type:after {
+  left: 0;
+  width: 467px;
+  content: "";
+  height: 2px;
+  position: absolute;
+  background-color: inherit;
+  bottom: -2px;
+}
+
+.Noti {
+  position: relative;
+  padding-bottom: 15px;
+  font-size: 12px;
+}
+
+.Noti:before {
+  border-radius: 5px;
+}
+
+.Noti .Image {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.Noti .Image figure {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.Noti .Image figure img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+  transition: opacity 0.2s;
+}
+
+.Noti:hover .Image figure img {
+  opacity: 0.7;
+}
+
+.Noti .Image figure,
+.Noti.Big .Image figure {
+  padding-top: 53.01204819277109%;
+}
+
+.Noti .Image .BtnShr {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.Noti .Top,
+.Noti .Bod {
+  padding: 0 15px;
+}
+
+.Noti .Top .Title {
+  margin-bottom: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.Noti .Top p {
+  color: #bbb;
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.Noti.Big .Top {
+  margin-bottom: 5px;
+}
+
+.Bod> :last-child,
+.Bod p:last-of-type {
+  margin-bottom: 0;
+}
+
+.ListUser {
+  padding: 15px 0;
+}
+
+.ListUser>li>a {
+  display: block;
+  padding: 10px 15px;
+}
+
+.ListUser>li>a:before {
+  color: #eee;
+}
+
+.ListUser>li>a:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.ListUser>li>a:hover:before {
+  color: inherit;
+}
+
+.ListUser>li:last-child {
+  padding: 15px 15px 0;
+  border-top: 1px solid #f3f3f3;
+}
+
+.ListUser>li>a.LogOut {
+  background-color: #fb3447;
+  font-size: 12px;
+}
+
+a.LogOut {
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+a.LogOut:before {
+  margin-right: 5px;
+}
+
+a.LogOut:hover {
+  opacity: 0.8;
+}
+
+.Sect {
+  background-color: #fff;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.Sect>.Top {
+  padding: 20px 15px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #3b4248;
+  display: block;
+  position: relative;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 70px;
+}
+
+.Sect>.Top span {
+  font-size: 12px;
+  color: #999;
+}
+
+.Sect>.Top:before {
+  color: #fec601;
+}
+
+.Sect>.Bod {
+  padding: 15px;
+  border-top: 1px solid #f3f3f3;
+  color: #666;
+}
+
+button.StylA,
+.Button.StylA {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: 700;
+  min-width: 150px;
+}
+
+button.StylA:hover,
+.Button.StylA:hover {
+  background-color: #eee;
+  border-color: #bbb;
+}
+
+button.StylB,
+.Button.StylB {
+  background-color: #01bcf3;
+}
+
+button.StylB:hover,
+.Button.StylB:hover {
+  opacity: 0.8;
+}
+
+.ChgImg,
+.ChgImg img {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.SprBar {
+  position: relative;
+  padding-bottom: 14px;
+}
+
+.SprBar:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: -15px;
+  right: -15px;
+  bottom: 0;
+  background-color: #eee;
+}
+
+.Buttons button,
+.Buttons .Button {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.StickyCn .Main,
+.StickyCn .Sidebar {
+  margin-bottom: 20px;
+}
+
+.CapiVid {
+  padding-top: 60%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  min-height: 300px;
+}
+
+.CapiVid>*,
+.CapiVid video,
+.CapiVid iframe,
+.CapiVid embed,
+.CapiVid object {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.DvrAbs {
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+.DvrAbs>label,
+.DvrAbs>div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.DvrAbs>label {
+  background-color: #000;
+  opacity: 0.5;
+  border-radius: 5px;
+}
+
+.DvrAbs>div {
+  z-index: 2;
+  width: 310px;
+  height: 260px;
+  padding: 5px;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 310px;
+}
+
+.DvrAbs>div .Close {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: #fb3447;
+  color: #fff;
+  padding: 0;
+}
+
+.DvrAbs>div .Close:hover {
+  opacity: 0.8;
+}
+
+#HdDvr:checked~.DvrAbs {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.Wdgt.Facebook .Top span,
+.Wdgt.Facebook .Top strong {
+  display: block;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.Wdgt.Facebook .Top:before {
+  color: #fff;
+  right: auto;
+  left: 15px;
+  font-size: 30px;
+}
+
+.Wdgt.Facebook .Bod {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.Description {
+  font-size: 12px;
+}
+
+.CapiTop {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px 70px;
+}
+
+.CapiTop .Title {
+  margin-bottom: 0;
+  font-weight: 700;
+  font-size: 15px;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.CapiTop .Title span {
+  font-weight: normal;
+}
+
+.CapiTop .CapNav {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  top: 0;
+  font-size: 20px;
+}
+
+.CapiTop .CapNav.Prev {
+  left: 0;
+  border-right: 1px solid #f3f3f3;
+}
+
+.CapiTop .CapNav.Next {
+  right: 0;
+  border-left: 1px solid #f3f3f3;
+}
+
+.ListShareCap {
+  font-size: 0;
+  height: 30px;
+  overflow: hidden;
+}
+
+.ListShareCap>li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+}
+
+.ListShareCap>li span {
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ListShareCap>li:before {
+  color: #fec601;
+  font-size: 15px;
+}
+
+.SharBar .CapLnk {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-left: 1px solid #f3f3f3;
+  width: 60px;
+  font-size: 20px;
+}
+
+.SharBar .CapLnk+.CapLnk {
+  right: 60px;
+}
+
+.SharBar .CapLnk:before {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  text-align: center;
+}
+
+.SharBar .CapLnk:hover {
+  opacity: 0.8;
+}
+
+.SharBar .CapLnk.Fav {
+  color: #ff3046;
+}
+
+.Sect>.Top>i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 60px;
+  border-left: 1px solid #f3f3f3;
+  font-size: 20px;
+  color: #e2e2e2;
+}
+
+.Sect>.Top>i:before {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  transition: all 0.2s;
+}
+
+.Button.Sm {
+  padding: 0 10px;
+  font-size: 10px;
+  border-radius: 10px;
+}
+
+.Button.Sm:before {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #fec601;
+}
+
+.Button.Sm:hover:before {
+  color: inherit;
+}
+
+.Msj {
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.Msj:before {
+  font-size: 20px;
+}
+
+.Msj,
+.Msj a {
+  color: #fff;
+}
+
+.Msj a {
+  font-weight: 700;
+}
+
+.Msj a:hover {
+  text-decoration: underline;
+}
+
+.Msj.Wrn {
+  background-color: #fec601;
+}
+
+.Msj.Err {
+  background-color: #ff3046;
+}
+
+.Msj.Scs {
+  background-color: #26ac61;
+}
+
+.StickyCn .Sidebar.is_stuck {
+  padding-top: 20px;
+}
+
+.TxtABtn {
+  position: relative;
+  padding-bottom: 45px;
+}
+
+.TxtABtn textarea {
+  height: 70px;
+  border: 0;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.TxtABtn textarea:focus~label {
+  border-color: #01bcf3;
+}
+
+.TxtABtn label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #e8e7f0;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.TxtABtn i {
+  z-index: 2;
+}
+
+.TxtABtn button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 12px;
+  border-radius: 15px;
+  padding: 5px 15px;
+  z-index: 2;
+}
+
+.Comment {
+  position: relative;
+  min-height: 65px;
+  margin-bottom: 40px;
+}
+
+.Comment figure,
+.Comment figure img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.Comment figure {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Comment {
+  font-size: 12px;
+}
+
+.Comment .User {
+  font-weight: 700;
+  color: #01bcf3;
+}
+
+.Comment>span {
+  display: block;
+  font-size: 11px;
+  color: #bbb;
+}
+
+.Button.Reply {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding: 0 10px;
+  border-radius: 10px;
+  opacity: 0.2;
+}
+
+.Comment:hover .Button.Reply {
+  opacity: 1;
+}
+
+.Ficha {
+  position: relative;
+  padding: 20px 0;
+  margin: -20px 0 20px;
+}
+
+.Ficha>.Bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+  box-shadow: inset 0 0 100px #000;
+}
+
+.Ficha>.Bg:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  content: "";
+}
+
+.Ficha>div {
+  position: relative;
+  z-index: 2;
+}
+
+.Ficha>div>.Title {
+  margin-bottom: 0;
+  font-size: 25px;
+  padding: 5px 0;
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #fff;
+  font-weight: 700;
+  padding-right: 5px;
+}
+
+.Ficha>div>.Title span {
+  font-weight: 300;
+}
+
+.Ficha .TxtAlt {
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 10px;
+  opacity: 0.5;
+  color: #fff;
+  background-color: #000;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+
+.Ficha .ListPostOpts {
+  padding-left: 0;
+  padding-top: 15px;
+  height: auto !important;
+}
+
+.Ficha .ListPostOpts:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.Ficha .ListPostOpts .BtnOpt.Comt span span {
+  display: inline !important;
+}
+
+.Ficha .ListPostOpts>li {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  float: left;
+  margin-right: 10px;
+}
+
+.Ficha .ListPostOpts>li label {
+  display: block;
+}
+
+.Ficha .ListPostOpts>li:last-child {
+  margin-bottom: 0;
+}
+
+.Dvr160 {
+  max-width: 160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.AnimeCover {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.AnimeCover .Votes {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.AnimeCover .Image {
+  position: relative;
+  max-width: 290px;
+  margin: 0 auto 15px;
+}
+
+.AnimeCover .Image figure {
+  padding-top: 142.30769230769232%;
+}
+
+.AnimeCover .Image figure a:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  box-shadow: inset 0 0 50px #000;
+}
+
+
+.col_grid_item .Anime {
+  -webkit-transform: translate3d(0, -2px, 0);
+  transform: translate3d(0, -2px, 0);
+  transition: all 0.3s;
+}
+
+.col_grid_item .Anime:hover {
+  box-shadow: 1px 1px 20px 2px rgba(0, 1, 1, 0.3);
+  animation: shadow 1s;
+}
+
+/* lista_layout */
+.lista_layout {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.lista_layout .item {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.lista_layout .item .thumb img {
+  border-radius: 4px;
+  padding: 1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.lista_layout .tit a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3b4248;
+}
+
+.lista_layout .tit a:hover {
+  color: #01bcf3;
+}
+
+.lista_layout .item .last_ep a {
+  font-weight: bold;
+  color: #01bcf3;
+}
+
+.lista_layout .item .last_ep a:hover {
+  text-decoration: underline;
+}
+
+.lista_layout .item .last_ep {
+  margin-top: 10px;
+}
+
+/* item_search */
+.item_search .tit em {
+  color: red;
+  font-style: normal;
+}
+
+.item_search .tit:hover em {
+  color: #01bcf3;
+}
+
+/* Categories */
+.Categories span.info {
+  display: none;
+}
+
+.Ficha>.Bg {
+  background: #00b0ff;
+  background: -webkit-linear-gradient(left, #00b0ff 0%, #d500f9 100%);
+  background: linear-gradient(to right, #00b0ff 0%, #d500f9 100%);
+}
+
+.ListResult em {
+  color: red;
+  font-style: normal;
+}
+
+.HdCapi {
+  background: #3b4248;
+}
+
+#download_cta a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 3px;
+  background: #009c00;
+  color: #fff;
+}
+
+#download_cta a:hover {
+  background: #4c9bde;
+}
+
+#ep_list_mobile {
+  display: none;
+}
+
+#vjs-tip {
+  float: left;
+}
+
+#video_box {
+  background: #111111;
+  height: auto;
+  float: left;
+  width: 100%;
+}
+
+#main_aside.full {
+  width: 100%;
+  padding-right: 0;
+}
+
+.last_ep_label {
+  background-color: #01bcf3;
+  border-radius: 3px;
+  color: #fff;
+  padding: 3px 8px;
+  position: relative;
+  z-index: 9999;
+}
+
+.AnimeDia .AnimeCover .Image:hover .last_ep_label,
+.last_ep_label:hover {
+  background: #ff7e00;
+}
+
+.error_movie.alert {
+  position: absolute;
+  margin: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
+  width: 90%;
+}
+
+.modal {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.highdun {
+  width: 0;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.Sect.Comments {
+  margin-bottom: 15px;
+}
+
+#info_player {
+  position: relative;
+}
+
+/*  */
+.acaidet a {
+  display: block;
+  position: relative;
+  z-index: 99999;
+}
+
+.link_footer_movie {
+  margin: 0;
+  padding: 0 20px 10px 20px;
+  color: #ddd;
+}
+
+.link_footer_movie a {
+  color: #656c7a;
+  font-size: 12px;
+}
+
+#main_aside #video_box,
+#main_aside .video-js {
+  width: 100%;
+}
+
+@media all and (min-width: 1170px) {
+
+  #main_aside #video_box,
+  #main_aside .video-js {
+    height: auto;
+    min-height: 461.25px !important;
+    width: 100%;
+  }
+
+  #main_aside.full #video_box,
+  #main_aside.full .video-js {
+    height: auto;
+    width: 100%;
+    min-height: 640px !important;
+  }
+}
+
+@media all and (-ms-high-contrast: none) {
+  * {
+    min-height: 0%;
+  }
+}
+
+@media all and (max-width: 1020px) {
+  .NScr {
+    overflow: hidden;
+  }
+
+  #BtnMenu:checked~nav {
+    left: 0;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  #BtnMenu:checked~label:before {
+    content: "\f00d";
+    background-color: #fb3447;
+  }
+
+  #BtnMenu:checked~label:after {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.5;
+    content: "";
+    z-index: 9;
+  }
+
+  .Header>.Mid nav,
+  .BtnMenu {
+    transition: opacity 0.2s, left 0.2s;
+  }
+
+  .Header>.Mid nav {
+    position: fixed;
+    width: 270px;
+    left: -270px;
+    top: 0;
+    bottom: 0;
+    background-color: #3b4248;
+    z-index: 10;
+    box-shadow: inset 0 0 270px rgba(0, 0, 0, 0.2), 0 0 30px rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    overflow: auto;
+    opacity: 0;
+  }
+
+  .BtnMenu {
+    height: 40px;
+    margin-top: 15px;
+    text-align: center;
+    position: relative;
+  }
+
+  .BtnMenu:before {
+    line-height: 40px;
+    width: 40px;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #01bcf3;
+    display: block;
+    margin-right: 0;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .BtnMenu span {
+    position: absolute;
+    right: 50px;
+    top: 0;
+    line-height: 40px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 12px;
+  }
+
+  .Header>.Mid .Login .DpdwCnt,
+  .Header>.Mid .Search .DpdwCnt {
+    position: relative;
+    right: 0;
+    width: auto;
+  }
+
+  .SidebarB {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .ScrlV {
+    max-height: 180px !important;
+  }
+
+  .Wdgt .Top .WdgtLink {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .Wdgt>input+.Top[class*="fa-"]:before {
+    position: static;
+    height: 20px;
+    line-height: 20px;
+    width: 30px;
+    text-align: center;
+    margin-left: -5px;
+  }
+
+  .Wdgt .Top .WdgtLink:after {
+    background-color: #f3f3f3;
+    width: 1px;
+    height: 50px;
+    position: absolute;
+    right: 49px;
+    top: 0;
+    content: "";
+  }
+
+  .Wdgt .Top .WdgtLink:before {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    color: #3b4248;
+    opacity: 0.2;
+    transition: all 0.2s;
+  }
+
+  .Wdgt .Top .WdgtLink:hover:before {
+    opacity: 1;
+  }
+
+  .Wdgt input+.Top+.Bod {
+    display: none;
+  }
+
+  .Wdgt input:checked+.Top+.Bod {
+    display: block;
+  }
+
+  .Wdgt input:checked+.Top .WdgtLink:before {
+    filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2);
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    opacity: 1;
+    color: #01bcf3;
+  }
+}
+
+@media all and (max-width: 667px) {
+  .Ficha .ListPostOpts>li {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 320px) {
+
+  .ListEpisodios.Rows>li,
+  .ListAnimes.Rows>li,
+  .ListNoticias.Rows>li {
+    width: 100%;
+  }
+
+  .ListShareCap {
+    height: 60px;
+  }
+
+  .ListShareCap>li:first-child {
+    display: block;
+  }
+}
+
+@media all and (min-width: 667px) {
+  .Ficha .ListPostOpts>li {
+    margin-bottom: 0;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .Footer {
+    text-align: left;
+  }
+
+  .Wdgt .Top .WdgtLink {
+    display: none;
+  }
+
+  .Noti .Image figure {
+    padding-top: 66.66666666666666%;
+  }
+
+  .Noti.Sml {
+    padding-bottom: 10px;
+  }
+
+  .Noti.Sml .Image {
+    margin-bottom: 10px;
+  }
+
+  .Noti.Sml .Top,
+  .Noti.Sml .Bod {
+    padding: 0 10px;
+  }
+
+  .Noti.Sml .Top .Title {
+    height: 40px;
+    overflow: hidden;
+  }
+
+  .no-flexbox.no-flexboxtweener .Main {
+    width: 100%;
+  }
+
+  .ListOptions.A {
+    height: 50px;
+  }
+
+  .ListOptions.A>li {
+    float: left;
+    width: 50%;
+  }
+
+  .Sidebar {
+    width: 320px;
+  }
+
+  .Column.Txar {
+    text-align: right;
+    padding-right: 20px;
+  }
+
+  .StickyCn {
+    margin: 0 -10px;
+  }
+
+  .StickyCn .Main,
+  .StickyCn .Sidebar {
+    float: left;
+    padding: 0 10px;
+  }
+
+  .StickyCn .Main {
+    width: 100%;
+    margin-right: -320px;
+    padding-right: 330px;
+  }
+
+  li li .Comment {
+    margin-left: 80px;
+  }
+
+  .Comment {
+    padding-left: 80px;
+  }
+
+  .Comment figure {
+    display: block;
+  }
+
+  .SidebarA {
+    width: 320px;
+  }
+}
+
+@media all and (min-width: 767px) and (max-width: 1020px) {
+  .Anime .Title a {
+    max-height: 20px;
+  }
+}
+
+@media all and (min-width: 567px) and (max-width: 767px),
+(min-width: 1020px) {
+  label[class*="Vw"] {
+    display: block;
+    padding: 0;
+  }
+
+  #VwList:checked~.ListAnimes>li,
+  .ListAnimes.VwListOn>li {
+    width: 100%;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime,
+  .ListAnimes.VwListOn>li .Anime {
+    height: 280px;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Image img,
+  .ListAnimes.VwListOn>li .Anime .Image img {
+    border-radius: 3px 0 0 0;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Image,
+  .ListAnimes.VwListOn>li .Anime .Image {
+    width: 195px;
+    padding-top: 280px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Estreno,
+  .ListAnimes.VwListOn>li .Anime .Estreno {
+    z-index: 4;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Text,
+  .ListAnimes.VwListOn>li .Anime .Text {
+    padding: 15px 20px 15px 210px;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Text .Title,
+  .ListAnimes.VwListOn>li .Anime .Text .Title {
+    padding: 0;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  #VwList:checked~.ListAnimes>li .Anime .Desc,
+  .ListAnimes.VwListOn>li .Anime .Desc,
+  #VwList:checked~.ListAnimes>li .Anime .Tags,
+  .ListAnimes.VwListOn>li .Anime .Tags {
+    display: block;
+  }
+
+  #VwList:checked~div .VwGrid {
+    color: #3b4248;
+  }
+
+  #VwList:checked~div .VwList {
+    color: #fec601;
+  }
+
+  .Options {
+    padding-right: 125px;
+    position: relative;
+  }
+
+  .Options .VwGrid {
+    right: 60px;
+    top: 0;
+  }
+
+  .Options .VwList {
+    right: 0;
+    top: 0;
+  }
+}
+
+@media all and (min-width: 1020px) and (max-width: 1200px) {
+  .ListNoticias>li:nth-child(n + 3) {
+    display: none;
+  }
+
+  .BtnOpt.Comt span span {
+    display: none;
+  }
+
+  .ListOptions.B>li {
+    float: left;
+    width: 50%;
+  }
+
+  .ListOptions.B>li:last-child {
+    clear: both;
+    width: 100%;
+    float: none;
+  }
+}
+
+@media all and (min-width: 1020px) {
+  .Title .Order {
+    position: absolute;
+    right: 0;
+    top: -10px;
+  }
+
+  .Noti.Big .Top .Title {
+    max-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+  }
+
+  .Noti.Big .Bod {
+    max-height: 150px;
+  }
+
+  .no-flexbox.no-flexboxtweener .SldrHmCn>div:first-child {
+    width: 100%;
+  }
+
+  .ListPostOpts {
+    height: 50px;
+  }
+
+  .ListPostOpts>li {
+    float: left;
+  }
+
+  .Slide .Image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    z-index: 3;
+  }
+
+  .Slide .Image figure {
+    padding-top: 220px;
+  }
+
+  .Slide .Top {
+    margin-left: 200px;
+  }
+
+  .Slide .Bod {
+    margin-left: 185px;
+  }
+
+  .Slide .Bot {
+    padding-left: 185px;
+  }
+
+  .BtnOpt.Favo {
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 15px;
+    width: 100px;
+  }
+
+  .Header>.Mid .Menu {
+    -webkit-order: -1;
+    -ms-order: -1;
+    order: -1;
+  }
+
+  .Header>.Mid .Menu>li {
+    display: inline-block;
+  }
+
+  .Header>.Mid .Search,
+  .Header>.Mid .Login {
+    padding: 15px 5px;
+  }
+
+  .Header>.Mid .Search {
+    width: 200px;
+  }
+
+  .Header>.Mid .ListSocial {
+    padding: 15px 0 15px 5px;
+  }
+
+  .Header>.Mid .Menu {
+    padding-right: 10px;
+  }
+
+  .Header>.Mid .Menu>li>a {
+    padding: 10px 15px;
+  }
+
+  .Header>.Mid .Menu>li.Current>a {
+    position: relative;
+  }
+
+  .Header>.Mid .Menu>li.Current>a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #01bcf3;
+  }
+
+  label.BtnMenu {
+    display: none;
+  }
+
+  #DpdwLnk-Login:checked+label:after {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 3;
+  }
+
+  #DpdwLnk-Login:checked~.DpdwCnt {
+    z-index: 4;
+  }
+
+  .ListOptions.A>li {
+    max-width: 220px;
+  }
+
+  .ListOptions.A .Select {
+    max-width: 150px;
+  }
+
+  .Ficha .ListPostOpts {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .Ficha .ListPostOpts>li:last-child {
+    margin-right: 0;
+  }
+
+  .Ficha>.Container {
+    padding-top: 80px;
+  }
+
+  .Ficha .Share .DpdwCnt.TtCn {
+    left: auto;
+    right: 0;
+    top: 60px;
+  }
+
+  .Ficha .Share .DpdwCnt.TtCn:before {
+    left: auto;
+    right: 35px;
+  }
+
+  .SidebarB {
+    width: 180px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .Wrapper {
+    padding-top: 67px;
+  }
+
+  .Wrapper>.Header {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .Sidebar,
+  .Main {
+    float: left;
+    width: 100%;
+  }
+
+  .Title .Order {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+  }
+
+  .ListAnimes {
+    margin-bottom: 20px !important;
+  }
+
+  .cat_title .pull-right,
+  .cat_title .btn-default.dropdown-toggle {
+    font-size: 12px;
+  }
+
+  .cat_title .btn-group {
+    margin-right: 0 !important;
+  }
+
+  #genre_filter div.item_gen {
+    width: 14.28571428571429%;
+  }
+
+  .Ficha .ListPostOpts {
+    display: none;
+  }
+
+  .CapiCnt aside {
+    width: 100% !important;
+    padding: 0 !important;
+    float: left !important;
+    display: block !important;
+  }
+
+  .CapiCnt aside#sub_aside {
+    padding-bottom: 15px !important;
+    margin-top: 15px;
+  }
+
+  #sub_aside .BtnShare,
+  .BtnShare_hidden {
+    display: none;
+  }
+
+  #sub_aside .CapiList {
+    margin-bottom: 0;
+  }
+
+  .HdCapi {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  .CapiTop .Title {
+    font-size: 18px !important;
+    letter-spacing: 0;
+  }
+
+  .Wrapper>.Body {
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  #ep_list_mobile_container {
+    padding: 15px;
+  }
+
+  #ep_list_mobile {
+    margin: 0;
+  }
+
+  .AnimeCover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  .AnimeCover .ovf_cover {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  .AnimeCover .Image figure img {
+    visibility: hidden;
+  }
+
+  .AnimeCover .Votes {
+    border-radius: 5px;
+  }
+
+  .AnimeCover .Categories .Title {
+    color: #fff;
+  }
+
+  .AnimeCover .Categories {
+    z-index: 999;
+    position: relative;
+  }
+
+  .AnimeCover .Image figure {
+    padding-top: 69%;
+  }
+
+  .ListAnimRela .Anime .Image {
+    background-size: cover;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .Wdgt.Emision {
+    margin-bottom: 0;
+  }
+
+  .Menu {
+    border-top: 1px solid #333;
+    margin-top: 10px;
+  }
+
+  .Menu li {
+    border-bottom: 1px solid #333;
+  }
+
+  .ListSocial {
+    display: none;
+  }
+
+  /*  */
+  .ListUser {
+    padding-bottom: 0;
+  }
+
+  .Header>.Mid .Login .DpdwCnt {
+    background: none;
+  }
+
+  .Header>.Mid .Login .DpdwCnt.TtCn:before {
+    border-bottom: 5px solid #394046;
+  }
+
+  .Header>.Mid .Login .DpdwCnt.TtCn>.Title {
+    color: #fff;
+  }
+
+  .Header>.Mid .Login form .Links a {
+    color: #01bcf3;
+  }
+
+  .ListUser>li>a {
+    color: #fff;
+  }
+
+  .ListUser>li:last-child {
+    border-color: #333;
+  }
+}
+
+@media (max-width: 480px) {
+  .auth_inner h1 {
+    font-size: 16px;
+  }
+
+  .Title .Order {
+    display: none;
+  }
+
+  .cat_title .pull-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  #menu_in_sidebar>a:last-child {
+    font-size: 0;
+  }
+
+  .lista_layout .item .col-xs-2 {
+    display: none;
+  }
+
+  .lista_layout .item .col-xs-10 {
+    width: 100%;
+  }
+
+  .lista_layout .item p {
+    display: none;
+  }
+
+  #genre_filter div.item_gen {
+    width: 25%;
+  }
+
+  #genre_filter div.item_gen a {
+    font-size: 11px;
+  }
+
+  .block_search {
+    margin-bottom: 20px;
+  }
+
+  .block_search .col-xs-4 {
+    width: 100%;
+  }
+
+  #video_box,
+  .video-js {
+    height: auto !important;
+  }
+
+  .CapiTop .Title {
+    font-size: 16px !important;
+  }
+
+  .CapiTop .Title a {
+    display: block;
+  }
+
+  .CapiTop .Title span {
+    display: block;
+  }
+
+  .highdun-xs {
+    width: 0;
+    float: left;
+    height: 0;
+    position: relative;
+    overflow: hidden;
+  }
+}
