@@ -7,6 +7,8 @@ import hooks from '@u3u/vue-hooks';
 
 require('./assets/css/style.css');
 require('./assets/css/notfound.css');
+require('./assets/css/LatestList.css');
+
 
 Vue.config.productionTip = false;
 
