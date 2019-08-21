@@ -1,9 +1,13 @@
 <template>
-  <a :style="{ 'background-image': 'url(' + animes.poster + ')' }" :title="animes.title" class="fas fa-play">
-    <span class="Image"><img :src="animes.poster" :alt="animes.title"></span>
-    <span class="Capi">{{animes.state}}</span>
-    <strong class="Title">{{animes.title}}</strong>
-  </a>  
+  <div>
+    <router-link :to="{name: 'AnimeVideo' , params:{id: anime.id , type: anime.type}}">
+      <a :style="{ 'background-image': 'url(' + animes.poster + ')' }" :title="animes.title" class="fas fa-play">
+        <span class="Image"><img :src="animes.poster" :alt="animes.title"></span>
+        <span class="Capi">{{animes.state}}</span>
+        <strong class="Title">{{animes.title}}</strong>
+      </a>
+    </router-link>
+  </div>  
 </template>
 
 <script>
