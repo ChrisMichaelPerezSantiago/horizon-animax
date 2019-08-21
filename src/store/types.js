@@ -1,2 +1,3 @@
 export const SET_LATEST_ANIME = "SET_LATEST_ANIME";
+export const SET_VIDEO_ANIME = "SET_VIDEO_ANIME";
 export const IS_LOADING = "IS_LOADING";
