@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <img :src="anime.poster" class="img-fluid" alt="">
-  </div>   
+  <a :style="{ 'background-image': 'url(' + animes.poster + ')' }" :title="animes.title" class="fas fa-play">
+    <span class="Image"><img :src="animes.poster" :alt="animes.title"></span>
+    <span class="Capi">{{animes.state}}</span>
+    <strong class="Title">{{animes.title}}</strong>
+  </a>  
 </template>
 
 <script>
@@ -10,13 +12,13 @@
   export default {
     name: "Anime",
     props:{
-      anime: Object
+      animes: Object
     },
     setup(props){
       /**
-       * anime: [{title , id , poster , type , synopsis , state}]
+       * animes: [{title , id , poster , type , synopsis , state}]
        */
-      const anime = value(props.anime)
+      const anime = value(props.animes)
 
       return{
         anime
