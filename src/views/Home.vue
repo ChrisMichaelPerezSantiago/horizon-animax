@@ -46,13 +46,3 @@ export default {
   }
 };
 </script>
-
-<style>
-  .loading{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    background-color: #292e30;
-  }
-</style>
