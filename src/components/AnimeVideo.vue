@@ -17,7 +17,7 @@
         </form>              
       </div>
        <div class="embed-responsive embed-responsive-21by9">
-          <iframe class="embed-responsive-item" id="_video" :src="videos.video"></iframe>
+          <iframe ref="video" class="embed-responsive-item" id="_video" :src="videos.video"></iframe>
       </div>
     </div>        
   </div>
@@ -25,12 +25,12 @@
 
 
 <script>
-  import {value , onCreated, watch, onBeforeDestroy} from 'vue-function-api';
+  import {value , onCreated, watch, onBeforeDestroy , onMounted} from 'vue-function-api';
   import {useState , useStore , useRouter} from '@u3u/vue-hooks';
 
   export default{
     name: "AnimeVideo",
-    setup(){
+    setup(props , context){
       const store = useStore();
       const {route} = useRouter();
 
@@ -48,6 +48,7 @@
       };
       const eps = value(null);
 
+
       watch(() => 
         eps.value , (eps) =>{
           store.value.dispatch("GET_ANIME_VIDEO" , {
@@ -62,25 +63,30 @@
        * It needs to be fixed.
        *****/
       watch(() =>
-        state.videos.video.value , (video) =>{
-          console.log('hi');
-          state.videos.video.value = video;
-          let src = state.videos.video.value;
-          display(src);
+        state.videos.video , (video) =>{
+          console.log('hi: ' , video);
+          state.videos.video = video;
+          let src = state.videos.video;          
+          if(context.refs.video){
+            this.display(src);
+          }
       });
+    
+
 
       const createObjectURL = (object) =>{
-          return (window.URL) 
-            ? window.URL.createObjectURL(object)
-            : window.webkitURL.createObjectURL(object);
+        return (window.URL) 
+          ? window.URL.createObjectURL(object)
+          : window.webkitURL.createObjectURL(object);
       };
+      
       const display = async(videoStream) =>{
-          var video = document.getElementById('_video').src;
-          let blob = await fetch(videoStream , {mode: 'no-cors'}).then(r => r.blob());
-          var videoUrl = this.createObjectURL(blob);
-          video.src = videoUrl;
-          document.getElementById('_video').load();
-          console.log("value: " , video.src);
+        var video = context.refs.video;
+        console.log('context: ' , video);
+        let blob = await fetch(videoStream , {mode: 'no-cors'}).then(r => r.blob());
+        var videoUrl = this.createObjectURL(blob);
+        video.src = videoUrl;
+        video.load();
       }
       
       return{
