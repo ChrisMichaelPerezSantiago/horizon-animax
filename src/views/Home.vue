@@ -5,11 +5,16 @@
       <div class="">
         <h2>Últimas series</h2>
       </div>
-      <ul class="ListEpisodios AX Rows A06 C04 D03">
-        <li v-for="(anime, index) in latestAnimes" :key="index">
-          <Anime :animes="anime"/>
-        </li>
-      </ul>
+      <div v-if="!isLoading">
+        <img class="loading" src="../assets/loading.gif" alt="loading">
+      </div>
+      <div v-else>
+        <ul class="ListEpisodios AX Rows A06 C04 D03">
+          <li v-for="(anime, index) in latestAnimes" :key="index">
+            <Anime :animes="anime"/>
+          </li>
+        </ul>
+      </div>
     </main>
   </div>
 </template>
@@ -41,3 +46,13 @@ export default {
   }
 };
 </script>
+
+<style>
+  .loading{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    background-color: #292e30;
+  }
+</style>
