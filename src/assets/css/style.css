@@ -22,6 +22,23 @@ a:hover {
 
 
 /*****************
+ * VIDEO SECTION
+ *****************/
+#reproductor-box { 
+  margin:5px 0 5px 0; padding:0; width:100%; float:left; 
+}
+.video-header { margin:0; padding:0 1%; width:100%; height:46px; color:#fff; background:#144463; float:left; }
+.video-header h1 { margin:0; padding:0; font-size:23px; line-height:46px; color:#FFFFFF; font-weight:normal; float:left; }
+.video-section {margin:8px 0 0 0;padding:0;height:31px;float:right;}
+.video-section select {margin:0 10px 0;padding:0 5px 0 0;width:160px;height:31px;line-height:31px;font-size:13px;color:#666;background:#fff;border:none;border-radius:3px;float:left;/* display: none; */}
+iframe{ 
+  height: 100%; 
+  width: 100%;
+}
+
+
+
+/*****************
  * Letter Box
  *****************/
 .letras-box, .for-day-box { margin:0; padding:0; width:100%; float:left; }
