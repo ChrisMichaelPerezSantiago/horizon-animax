@@ -5,7 +5,7 @@
       <div class="">
         <h2>Últimas series</h2>
       </div>
-      <div v-if="!isLoading">
+      <div v-if="isLoading">
         <img class="loading" src="../assets/loading.gif" alt="loading">
       </div>
       <div v-else>
@@ -24,7 +24,6 @@ import { onCreated } from "vue-function-api";
 import { useState, useStore } from "@u3u/vue-hooks";
 import Anime from "../components/Anime";
 import LetterBox from "../components/LetterBox";
-
 export default {
   name: "home",
   components: {
@@ -39,7 +38,6 @@ export default {
     onCreated(() => {
       store.value.dispatch("GET_LATEST_ANIME");
     });
-
     return {
       ...state
     };
