@@ -1,6 +1,6 @@
 <template>
   <div>
-    <router-link :to="{name: 'AnimeVideo' , params:{id: anime.id , type: anime.type}}">
+    <router-link :to="{name: 'AnimeVideo' , params:{id: anime.id , type: anime.type , title: anime.title}}">
       <a :style="{ 'background-image': 'url(' + animes.poster + ')' }" :title="animes.title" class="fas fa-play">
         <span class="Image"><img :src="animes.poster" :alt="animes.title"></span>
         <span class="Capi">{{animes.state}}</span>
