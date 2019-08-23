@@ -22,11 +22,13 @@
   import {value , onCreated} from "vue-function-api";
   import {useState , useStore , useRouter} from '@u3u/vue-hooks';
   import Anime from "./Anime";
+  import LetterBox from "./LetterBox";
 
   export default {
     name: "LetterBox",
     components:{
-      Anime
+      Anime,
+      LetterBox
     },
     setup(){
       const store = useStore();
