@@ -19,6 +19,9 @@ export const mutations = {
   [types.SET_ANIME_LETTER](state , payload){
     state.animesByLetter = payload;
   },
+  [types.SET_ANIME_SEARCH](state , payload){
+    state.searchAnime = payload;    
+  },
   [types.IS_LOADING](state, payload) {
     state.isLoading = payload;
   }

@@ -1,4 +1,5 @@
 export const SET_LATEST_ANIME = "SET_LATEST_ANIME";
 export const SET_VIDEO_ANIME = "SET_VIDEO_ANIME";
 export const SET_ANIME_LETTER = "SET_ANIME_LETTER";
+export const SET_ANIME_SEARCH  = "SET_ANIME_SEARCH";
 export const IS_LOADING = "IS_LOADING";

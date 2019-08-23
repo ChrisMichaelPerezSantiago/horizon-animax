@@ -47,5 +47,17 @@ export const actions = {
       }).catch(err =>{
         console.log(err);
       });
+  },
+  GET_ANIME_SEARCH({commit} , query){
+    axios.get(`${PATH.SEARCH}/${query}`)
+      .then(doc =>{
+        const animes = doc.data.animes;
+        commit(types.SET_ANIME_SEARCH , animes);
+        setTimeout(() => {
+          commit(types.IS_LOADING , false);
+        } , 1000);
+      }).catch(err =>{
+        console.log(err);
+      });
   }
 };
