@@ -38,7 +38,7 @@
   import LetterBox from "./LetterBox";
 
   export default {
-    name: "LetterBox",
+    name: "ByLetter",
     components:{
       Anime,
       LetterBox
