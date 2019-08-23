@@ -2,6 +2,8 @@ const axios = require('axios');
 const types = require('./types');
 const PATH = require('./urls');
 
+const pagin = require('../js/paginator.js');
+
 export const actions = {
   GET_LATEST_ANIME({commit}){
     axios.get(`${PATH.LATEST}`)
@@ -21,7 +23,9 @@ export const actions = {
     axios.get(`${PATH.LETTER}/${letter}/${page}`)
       .then(doc =>{
         console.log("doc: ", doc);
-        commit(types.SET_ANIME_LETTER , doc.data.animes);
+        const animes = doc.data.animes;
+        const dataPaginated = pagin.paginator(animes , page , 12)
+        commit(types.SET_ANIME_LETTER , dataPaginated);
         setTimeout(() => {
           commit(types.IS_LOADING , false);
         } , 1000);
