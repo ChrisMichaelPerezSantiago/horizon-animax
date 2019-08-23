@@ -4,6 +4,8 @@ import router from "./router";
 import store from "./store/store";
 import { plugin } from 'vue-function-api';
 import hooks from '@u3u/vue-hooks';
+import Paginate from 'vuejs-paginate'
+
 
 require('./assets/css/style.css');
 require('./assets/css/notfound.css');
@@ -14,6 +16,8 @@ Vue.config.productionTip = false;
 
 Vue.use(hooks);
 Vue.use(plugin);
+
+Vue.component('paginate' , Paginate);
 
 new Vue({
   router,
