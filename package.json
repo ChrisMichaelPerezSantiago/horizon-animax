@@ -24,6 +24,7 @@
     "vue": "^2.6.10",
     "vue-function-api": "^2.2.0",
     "vue-router": "^3.0.3",
+    "vuejs-paginate": "^2.1.0",
     "vuex": "^3.0.1",
     "vuex-persistedstate": "^2.5.4"
   },
