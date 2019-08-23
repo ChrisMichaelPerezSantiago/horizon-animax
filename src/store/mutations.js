@@ -16,6 +16,9 @@ export const mutations = {
   [types.SET_VIDEO_ANIME](state , payload){
     state.videos = payload;
   },
+  [types.SET_ANIME_LETTER](state , payload){
+    state.animesByLetter = payload;
+  },
   [types.IS_LOADING](state, payload) {
     state.isLoading = payload;
   }

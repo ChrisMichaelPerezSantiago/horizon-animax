@@ -15,6 +15,20 @@ export const actions = {
         console.log(err);
       });
   },
+  GET_LETTER_ANIME({commit} , doc){
+    const letter = doc.letter;
+    const page = doc.page;
+    axios.get(`${PATH.LETTER}/${letter}/${page}`)
+      .then(doc =>{
+        console.log("doc: ", doc);
+        commit(types.SET_ANIME_LETTER , doc.data.animes);
+        setTimeout(() => {
+          commit(types.IS_LOADING , false);
+        } , 1000);
+      }).catch(err =>{
+        console.log(err);
+      });
+  },
   GET_ANIME_VIDEO({commit} , doc){
     const id = doc.id;
     const eps = doc.eps;
