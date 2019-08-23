@@ -9,10 +9,23 @@
       </div>
       <div v-else>
         <ul class="ListEpisodios AX Rows A06 C04 D03">
-          <li v-for="(anime, index) in animesByLetter" :key="index">
+          <li v-for="(anime, index) in animesByLetter.data" :key="index">
             <Anime :animes="anime"/>
           </li>
         </ul>
+        <paginate
+          class="pagination"
+          v-model="page"
+          :page-count="animesByLetter.total_pages"
+          :page-range="3"
+          :margin-pages="2"
+          :click-handler="() => init()"
+          :prev-text="'Prev'"
+          :next-text="'Next'"
+          :container-class="'pagination'"
+          :page-class="'page-item'"
+        >
+        </paginate>
       </div>
     </main>
   </div>
@@ -39,15 +52,28 @@
       const state = {
         ...useState(["animesByLetter" , "isLoading"])
       };
+
+      const page = value(1);
+
+      const init = () => {
+        store.value.dispatch("GET_LETTER_ANIME" , {
+          letter: letter.value,
+          page: page.value // TEMPORARY VALUE
+        });
+      }
+
       onCreated(() =>{
         store.value.dispatch("GET_LETTER_ANIME" , {
           letter: letter.value,
-          page: 1 // TEMPORARY VALUE
+          page: page.value // TEMPORARY VALUE
         });
       });
 
       return{
-        ...state
+        ...state,
+
+        init,
+        page
       }
     }
   };
