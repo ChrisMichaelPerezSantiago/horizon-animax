@@ -2,8 +2,8 @@
   <div class="container">
     <LetterBox/> <!-- LETTER BOX -->
     <main class="Main">
-      <div class="">
-        <h2>Últimas series</h2>
+      <div class="alert alert-info" role="alert">
+        Últimas series
       </div>
       <div v-if="isLoading">
         <img class="loading" src="../assets/loading.gif" alt="loading">

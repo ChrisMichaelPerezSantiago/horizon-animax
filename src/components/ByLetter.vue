@@ -1,8 +1,8 @@
 <template>
    <div class="container">
     <main class="Main">
-      <div class="">
-        <h2>Animes de TV/Letras</h2>
+      <div class="alert alert-info" role="alert">
+        Animes de TV/Letras
       </div>
       <div v-if="isLoading">
         <img class="loading" src="../assets/loading.gif" alt="loading">
