@@ -22,6 +22,15 @@ export const mutations = {
   [types.SET_ANIME_SEARCH](state , payload){
     state.searchAnime = payload;    
   },
+  [types.SET_ANIME_GENRES](state , payload){
+    state.animesByGenres = payload;
+  },
+  [types.SET_MOVIES](state , payload){
+    state.movies = payload;
+  },
+  [types.SET_OVAS](state , payload){
+    state.ovas = payload;
+  }, 
   [types.IS_LOADING](state, payload) {
     state.isLoading = payload;
   }

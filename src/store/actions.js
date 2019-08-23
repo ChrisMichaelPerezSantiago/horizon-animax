@@ -59,5 +59,46 @@ export const actions = {
       }).catch(err =>{
         console.log(err);
       });
-  }
+  }, 
+  GET_ANIME_GENRES({commit} , doc){
+    const genre = doc.genre;
+    const page = doc.page;
+    axios.get(`${PATH.GENRES}/${genre}/${page}`)
+      then(doc =>{
+        const animes = doc.data.animes;
+        const dataPaginated = pagin.paginator(animes , page , 12);
+        commit(types.SET_ANIME_GENRES , dataPaginated);
+        setTimeout(() => {
+          commit(types.IS_LOADING , false);
+        } , 1000);
+      }).catch(err =>{
+        console.log(err);
+      });
+  },
+  GET_MOVIES({commit} , page){
+    A.get(`${PATH.MOVIES}/${page}`)
+      .then(doc =>{
+        const movies = doc.data.movies;
+        const dataPaginated = pagin.paginator(movies , page , 12);
+        commit(types.SET_MOVIES , dataPaginated);
+        setTimeout(() => {
+          commit(types.IS_LOADING , false);
+        });
+      }).catch((err) =>{
+        console.log(err);
+      });
+  },
+  GET_ANIME_OVAS({commit} , page){
+    A.get(`${PATH.OVA}/${page}`)
+      .then(doc =>{
+        const ovas = doc.data.ovas;
+        const dataPaginated = pagin.paginator(ovas , page , 12);
+        commit('SET_OVAS' , dataPaginated);
+        setTimeout(() => {
+          commit(types.IS_LOADING , false);
+        });
+      }).catch((err) =>{
+        console.log(err);
+      });
+  },
 };
