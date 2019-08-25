@@ -59,6 +59,21 @@ iframe{
 .letras-box ul li.box-link a:hover {background: #1f628e !important;}
 
 
+/*****************
+ * Genres Box
+ *****************/
+#titleHeader{margin-top: 25%;}
+.letras-box, .type-list, .genre-list {display: block !important;}
+.letras-box, .type-list, .genre-list {display: block !important;}
+ #container #letrasint .letras-box ul li.box-link {float: right; display: none;}
+.type-list ,.genre-list { display:none; margin:0; padding:15px 2%; width:100%; background:#393f42; float:left; }
+.type-list h3,.genre-list h3 { margin:0 0 10px 0; padding:0 12px 5px 12px; font-size:14px; text-transform:uppercase; color:#fff; font-weight:normal; border-bottom:1px solid #B14701; display:block; }
+.type-list ul,.genre-list ul { margin:0; padding:0; width:100%; list-style:none; float:left; }
+.type-list ul li,.genre-list ul li { margin:0 1% 2px 1%; padding:0; width:18%; float:left; }
+.type-list ul li a,.genre-list ul li a { margin:0; padding:5px 10px; font-size:13px; color:#fff; border-bottom:1px solid #393f42; display:block; -o-transition:.4s; -ms-transition:.4s; -moz-transition:.4s; -webkit-transition:.4s; transition:.4s; }
+.type-list  ul li a:hover,.genre-list ul li a:hover {  padding-left:15px; background:#2980b9; border-bottom-color:transparent; border-radius:4px; }
+
+
 
 /*****************
  * NavBar
