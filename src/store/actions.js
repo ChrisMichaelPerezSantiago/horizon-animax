@@ -64,7 +64,7 @@ export const actions = {
     const genre = doc.genre;
     const page = doc.page;
     axios.get(`${PATH.GENRES}/${genre}/${page}`)
-      then(doc =>{
+      .then(doc =>{
         const animes = doc.data.animes;
         const dataPaginated = pagin.paginator(animes , page , 12);
         commit(types.SET_ANIME_GENRES , dataPaginated);

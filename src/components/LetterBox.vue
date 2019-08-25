@@ -31,7 +31,7 @@
           <li><router-link class="letra-link" :to="{name: 'ByLetter' , params:{letter: 'Y'}}" title="Animes por letra Y">Y</router-link></li>
           <li><router-link class="letra-link" :to="{name: 'ByLetter' , params:{letter: 'Z'}}" title="Animes por letra Z">Z</router-link></li>
           <li class="box-link tp"><router-link :to="{name: 'ByType'}" title="Animes por Tipo">Por Tipo &darr;</router-link></li>
-          <li class="box-link lt"><router-link to="#letrasint" title="Animes por Genero">Por Genero &darr;</router-link></li>
+          <li class="box-link lt"><router-link :to="{name: 'Genres'}" title="Animes por Genero">Por Genero &darr;</router-link></li>
         </ul>
       </div>
     </div>
