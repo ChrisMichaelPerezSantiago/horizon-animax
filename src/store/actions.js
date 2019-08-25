@@ -76,20 +76,21 @@ export const actions = {
       });
   },
   GET_MOVIES({commit} , page){
-    A.get(`${PATH.MOVIES}/${page}`)
+    axios.get(`${PATH.MOVIES}/${page}`)
       .then(doc =>{
+        console.log(doc);
         const movies = doc.data.movies;
         const dataPaginated = pagin.paginator(movies , page , 12);
         commit(types.SET_MOVIES , dataPaginated);
         setTimeout(() => {
           commit(types.IS_LOADING , false);
-        });
+        } , 1000);
       }).catch((err) =>{
         console.log(err);
       });
   },
   GET_ANIME_OVAS({commit} , page){
-    A.get(`${PATH.OVA}/${page}`)
+    axios.get(`${PATH.OVA}/${page}`)
       .then(doc =>{
         const ovas = doc.data.ovas;
         const dataPaginated = pagin.paginator(ovas , page , 12);
