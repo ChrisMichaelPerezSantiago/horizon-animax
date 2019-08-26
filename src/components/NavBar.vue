@@ -18,8 +18,8 @@
         </ul>
         <div class="search-bar">
           <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Buscar Anime ..." aria-label="Search">
-            <button class="btn btn-main my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+            <input class="form-control mr-sm-2" v-model="query" type="search" placeholder="Buscar Anime ..." aria-label="Search">
+            <button class="btn btn-main my-2 my-sm-0" @click.prevent="goto()" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </div>
       </div>
@@ -30,16 +30,28 @@
 
 <script>
   import {value} from 'vue-function-api';
+  import {useRouter} from '@u3u/vue-hooks';
 
   export default {
     name: "NavBar",
     setup(){
+      const {router} = useRouter();
+
+      const query = value("");
+
       let show = value(true);
       const toggleNavbar = () => show.value = !show.value;      
+
+      const goto = () =>{
+        let to = {name: 'AnimeSearched' , params:{query: query}}
+        router.push(to);
+      };
         
       return{
         show,
-        toggleNavbar
+        toggleNavbar,
+        goto,
+        query
       }
     }
   }
