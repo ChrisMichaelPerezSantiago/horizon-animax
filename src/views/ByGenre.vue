@@ -56,14 +56,14 @@
       const init = () => {
         store.value.dispatch("GET_ANIME_GENRES" , {
           genre: genres.value,
-          page: page.value // TEMPORARY VALUE
+          page: page.value 
         });
       }
 
       onCreated(() =>{
         store.value.dispatch("GET_ANIME_GENRES" , {
           genre: genres.value,
-          page: page.value // TEMPORARY VALUE
+          page: page.value 
         });
       });
 

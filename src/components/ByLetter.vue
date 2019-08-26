@@ -58,14 +58,14 @@
       const init = () => {
         store.value.dispatch("GET_LETTER_ANIME" , {
           letter: letter.value,
-          page: page.value // TEMPORARY VALUE
+          page: page.value 
         });
       }
 
       onCreated(() =>{
         store.value.dispatch("GET_LETTER_ANIME" , {
           letter: letter.value,
-          page: page.value // TEMPORARY VALUE
+          page: page.value 
         });
       });
 
