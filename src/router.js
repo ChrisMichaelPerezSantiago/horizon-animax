@@ -6,6 +6,7 @@ import ByLette from "./components/ByLetter.vue";
 import ByType from "./views/ByType.vue";
 import ByGenre from "./views/ByGenre.vue";
 import Genres from "./views/Genres.vue";
+import AnimeSearched from "./views/AnimeSearched.vue";
 import NotFound from "./views/NotFound.vue";
 
 Vue.use(Router);
@@ -38,6 +39,11 @@ export default new Router({
       path: "/Genre/:genres",
       name: "ByGenre",
       component: ByGenre
+    },
+    {
+      path: "/search",
+      name: "AnimeSearched",
+      component: AnimeSearched
     },
     {
       path: "/Genres",
