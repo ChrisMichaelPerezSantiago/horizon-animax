@@ -58,6 +58,11 @@ iframe{
 .letras-box ul li.box-link a {margin:0;padding:0 10px;line-height:46px;font-size:15px;color:#FFFFFF;background:#2980b9;display:block;display:block;-o-transition:.2s;-ms-transition:.2s;-moz-transition:.2s;-webkit-transition:.2s;transition:.2s;}
 .letras-box ul li.box-link a:hover {background: #1f628e !important;}
 
+@media all and (max-width: 667px) {
+  .letras-box ul { margin:0; padding:0; width:100%; height:138px; list-style:none; background:#393f42; float:left; }
+}
+
+
 
 /*****************
  * Genres Box
