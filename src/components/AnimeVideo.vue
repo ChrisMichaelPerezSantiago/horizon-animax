@@ -3,9 +3,9 @@
     <span class="pbox"></span>
     <div id="reproductor-box">
       <div class="video-header">
-        <h1>{{title}}</h1>
+        <h1></h1>
         <form class="video-section">
-          <select class="container"  v-model="eps">
+          <select class="container" v-model="eps">
             <option v-for="(episode , index) in Array.from({length: totalEps}, (v , k) => k + 1)"
               :value="episode"
               :key="index"
@@ -17,15 +17,27 @@
         </form>              
       </div>
        <div class="embed-responsive embed-responsive-21by9">
-          <iframe ref="video" class="embed-responsive-item" id="_video" :src="videos.video"></iframe>
+          <iframe ref="video" style="background-color:black;" class="embed-responsive-item" id="_video" :src="videos.video"></iframe>
       </div>
-    </div>        
+    </div>   
+
+     <div class="jumbotron jumbotron-fluid" style="background:#144463 !important">
+      <div class="container">
+        <h1 class="display-4">
+          {{title}}<br> 
+          <span style="font-size:30px" class="badge badge-secondary">{{content}}</span>     
+          <span style="font-size:30px" class="badge badge-secondary">{{state}}</span>
+        </h1> 
+        <p class="lead">{{synopsis}}</p>
+      </div>
+    </div>
+
   </div>
 </template>
 
 
 <script>
-  import {value , onCreated, watch, onBeforeDestroy , onMounted} from 'vue-function-api';
+  import {value , watch} from 'vue-function-api';
   import {useState , useStore , useRouter} from '@u3u/vue-hooks';
 
   export default{
@@ -33,8 +45,6 @@
     setup(props , context){
       const store = useStore();
       const {route} = useRouter();
-
-
       const state = {
         ...useState(['videos' , 'isLoading'])
       };
@@ -44,10 +54,11 @@
           content: value(route.value.params.type.split('/')[0].trim() || '')
         },
         id: value(route.value.params.id),
-        title: value(route.value.params.title)
+        title: value(route.value.params.title),
+        synopsis: value(route.value.params.synopsis),
+        state: value(route.value.params.state)
       };
       const eps = value(null);
-
 
       watch(() => 
         eps.value , (eps) =>{
@@ -57,7 +68,6 @@
           });
         }
       );
-
       
       /****
        * It needs to be fixed.
@@ -72,8 +82,6 @@
           }
       });
     
-
-
       const createObjectURL = (object) =>{
         return (window.URL) 
           ? window.URL.createObjectURL(object)
@@ -94,9 +102,20 @@
 
         eps,
         title: params.title,
-        totalEps: params.types.totalEps,
+        totalEps: params.types.totalEps.value,
+        synopsis: params.synopsis.value,
+        content: params.types.content.value,
+        state: params.state.value
       }
     }
   };
 </script>
 
+
+<style>
+  
+.display-4 .badge{
+  display: inline-block;
+  margin-right: 30px;
+}
+</style>
