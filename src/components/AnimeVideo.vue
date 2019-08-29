@@ -110,12 +110,3 @@
     }
   };
 </script>
-
-
-<style>
-  
-.display-4 .badge{
-  display: inline-block;
-  margin-right: 30px;
-}
-</style>
