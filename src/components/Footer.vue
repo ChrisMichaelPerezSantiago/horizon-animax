@@ -12,10 +12,10 @@
       <div class="justify-content-center text-center bottom">
         <span>© {{year}} Horizon Animax , Todos los derechos reservados</span>
         <p class="font-italic">Ningúno de los vídeo se encuentra alojado en servidores.</p>
-        <router-link to="" class="btn btn-dark">
+        <a href="https://github.com/ChrisMichaelPerezSantiago/horizon-animax" class="btn btn-dark">
           <i class="fab fa-github"></i> 
           View code on Github
-        </router-link>
+        </a>
       </div>
     </div>
   </footer>
@@ -28,7 +28,7 @@
   export default {
     setup(){
       const values = {
-        year: new Date().getFullYear()
+        year: new Date().getFullYear(),
       };
 
       return{
