@@ -18,7 +18,7 @@
   "main": "background.js",
   "dependencies": {
     "@u3u/vue-hooks": "^1.4.0",
-    "@vue/cli-shared-utils": "^3.11.0",
+    "@vue/cli-shared-utils": "^4.4.4",
     "all-contributors-cli": "^6.9.0",
     "axios": "^0.19.0",
     "core-js": "^2.6.5",
